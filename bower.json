@@ -1,0 +1,40 @@
+{
+  "name": "idntty",
+  "version": "0.0.0",
+  "description": "Get trace identity.",
+  "main": "idntty.deploy.js",
+  "support": "idntty.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "get",
+    "trace",
+    "identity",
+    "idntty"
+  ],
+  "homepage": "https://github.com/volkovasystems/idntty",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "protype": "^0.22.0",
+    "falzy": "^0.20.0",
+    "truly": "^0.19.0",
+    "cemento": "^0.16.0",
+    "harden": "^0.22.0",
+    "kount": "^0.11.0"
+  },
+  "dependencies": {
+    "falzy": "^0.20.0",
+    "kurse": "^0.16.0",
+    "ntrprt": "^0.0.0",
+    "protype": "^0.22.0",
+    "truly": "^0.19.0"
+  }
+}
