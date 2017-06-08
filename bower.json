@@ -1,6 +1,6 @@
 {
   "name": "idntty",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Get trace identity.",
   "main": "idntty.deploy.js",
   "support": "idntty.support.js",
