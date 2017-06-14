@@ -66,7 +66,7 @@ const ntrprt = require( "ntrprt" );
 const protype = require( "protype" );
 const truly = require( "truly" );
 
-const ID = Symbol.for( "id" );
+const ID = Symbol( "id" );
 
 const idntty = function idntty( entity ){
 	/*;
