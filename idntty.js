@@ -35,6 +35,10 @@
 			"module": "idntty",
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+				"Vinse Vinalon"
+			],
 			"repository": "https://github.com/volkovasystems/idntty.git",
 			"test": "idntty-test.js",
 			"global": true
