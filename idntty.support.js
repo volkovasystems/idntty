@@ -35,6 +35,10 @@
               			"module": "idntty",
               			"author": "Richeve S. Bebedor",
               			"eMail": "richeve.bebedor@gmail.com",
+              			"contributors": [
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+              				"Vinse Vinalon"
+              			],
               			"repository": "https://github.com/volkovasystems/idntty.git",
               			"test": "idntty-test.js",
               			"global": true
@@ -54,7 +58,7 @@
               			"truly": "truly"
               		}
               	@end-include
-              */var _for = require("babel-runtime/core-js/symbol/for");var _for2 = _interopRequireDefault(_for);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+              */var _symbol = require("babel-runtime/core-js/symbol");var _symbol2 = _interopRequireDefault(_symbol);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var falzy = require("falzy");
 var kurse = require("kurse");
@@ -62,7 +66,7 @@ var ntrprt = require("ntrprt");
 var protype = require("protype");
 var truly = require("truly");
 
-var ID = (0, _for2.default)("id");
+var ID = (0, _symbol2.default)("id");
 
 var idntty = function idntty(entity) {
 	/*;
