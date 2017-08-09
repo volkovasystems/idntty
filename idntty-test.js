@@ -6,6 +6,6 @@ const ID = Symbol( "id" );
 const identity = Symbol( "sample-identity" );
 let source = { [ ID ]: identity };
 
-assert.equal( idntty( source ), identity, "should be true" );
+assert.equal( idntty( source ), identity, "should be equal to true" );
 
 console.log( "ok" );

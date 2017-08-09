@@ -18,12 +18,12 @@
 		<script type="application/javascript">
 			QUnit.test( "idntty unit test", function( assert ) {
 
-				const ID = Symbol.for( "id" );
+				const ID = Symbol( "id" );
 				const identity = Symbol( "sample-identity" );
 				let source = { [ ID ]: identity };
 
-				assert.equal( idntty( source ), identity, "should be true" );
-				
+				assert.equal( idntty( source ), identity, "should be equal to true" );
+
 			} );
 		</script>
 	</body>
