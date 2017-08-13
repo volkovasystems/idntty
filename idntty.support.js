@@ -58,7 +58,7 @@
               			"truly": "truly"
               		}
               	@end-include
-              */var _symbol = require("babel-runtime/core-js/symbol");var _symbol2 = _interopRequireDefault(_symbol);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+              */var _typeof2 = require("babel-runtime/helpers/typeof");var _typeof3 = _interopRequireDefault(_typeof2);var _symbol = require("babel-runtime/core-js/symbol");var _symbol2 = _interopRequireDefault(_symbol);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var falzy = require("falzy");
 var kurse = require("kurse");
@@ -86,7 +86,7 @@ var idntty = function idntty(entity) {
 
 	var identity = ntrprt(ID, entity);
 
-	if (truly(identity) && protype(identity, SYMBOL)) {
+	if (truly(identity) && (typeof identity === "undefined" ? "undefined" : (0, _typeof3.default)(identity)) == "symbol") {
 		return identity;
 
 	} else if (falzy(identity)) {
