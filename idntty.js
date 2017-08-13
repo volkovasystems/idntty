@@ -86,7 +86,7 @@ const idntty = function idntty( entity ){
 
  	let identity = ntrprt( ID, entity );
 
-	if( truly( identity ) && protype( identity, SYMBOL ) ){
+	if( truly( identity ) && typeof identity == "symbol" ){
 		return identity;
 
 	}else if( falzy( identity ) ){
