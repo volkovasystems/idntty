@@ -1,34 +1,27 @@
 {
-  "name": "idntty",
-  "version": "0.4.0",
-  "description": "Get trace identity.",
-  "main": "idntty.deploy.js",
-  "support": "idntty.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "get",
-    "trace",
-    "identity",
-    "idntty"
-  ],
-  "homepage": "https://github.com/volkovasystems/idntty",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "falzy": "^0.23.0",
-    "kurse": "^0.21.0",
-    "ntrprt": "^0.5.0",
-    "protype": "^0.24.0",
-    "truly": "^0.20.0"
-  }
+	"name": "idntty",
+	"version": "0.4.0",
+	"description": "Get trace identity.",
+	"main": "idntty.deploy.js",
+	"support": "idntty.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"get",
+		"trace",
+		"identity",
+		"idntty"
+	],
+	"homepage": "https://github.com/volkovasystems/idntty",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }
