@@ -66,6 +66,18 @@ const idntty = require( "./idntty.js" );
 
 describe( "idntty", ( ) => {
 
+	describe( "`idntty( { [ Symbol( 'id' ) ]: Symbol( 'sample-identity' ) } )`", ( ) => {
+		it( "should be equal to Symbol( 'sample-identity' )", ( ) => {
+
+			const ID = Symbol( "id" );
+			const identity = Symbol( "sample-identity" );
+			let source = { [ ID ]: identity };
+
+			assert.equal( idntty( source ), identity );
+
+		} );
+	} );
+
 } );
 
 //: @end-server

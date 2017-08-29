@@ -70,6 +70,18 @@ const path = require( "path" );
 
 describe( "idntty", ( ) => {
 
+	describe( "`idntty( { [ Symbol( 'id' ) ]: Symbol( 'sample-identity' ) } )`", ( ) => {
+		it( "should be equal to Symbol( 'sample-identity' )", ( ) => {
+
+			const ID = Symbol( "id" );
+			const identity = Symbol( "sample-identity" );
+			let source = { [ ID ]: identity };
+
+			assert.equal( idntty( source ), identity );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -78,6 +90,19 @@ describe( "idntty", ( ) => {
 //: @client:
 
 describe( "idntty", ( ) => {
+
+	describe( "`idntty( { [ Symbol( 'id' ) ]: Symbol( 'sample-identity' ) } )`", ( ) => {
+		it( "should be equal to Symbol( 'sample-identity' )", ( ) => {
+
+			const ID = Symbol( "id" );
+			const identity = Symbol( "sample-identity" );
+			let source = { [ ID ]: identity };
+
+			assert.equal( idntty( source ), identity );
+
+		} );
+	} );
+
 } );
 
 //: @end-client
@@ -86,6 +111,31 @@ describe( "idntty", ( ) => {
 //: @bridge:
 
 describe( "idntty", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`idntty( { [ Symbol( 'id' ) ]: Symbol( 'sample-identity' ) } )`", ( ) => {
+		it( "should be equal to Symbol( 'sample-identity' )", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					const ID = Symbol( "id" );
+					const identity = Symbol( "sample-identity" );
+					let source = { [ ID ]: identity };
+
+					return idntty( source ).toString( );
+
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, "Symbol(sample-identity)" );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge

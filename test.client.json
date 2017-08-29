@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-29T08:32:27.321Z",
+	"end": "2017-08-29T08:33:01.166Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "idntty",
+			"duration": 0,
+			"start": "2017-08-29T08:33:00.858Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "idntty",
+			"duration": 126,
+			"start": "2017-08-29T08:33:00.859Z",
+			"end": "2017-08-29T08:33:00.985Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-29T08:33:00.861Z",
+					"end": "2017-08-29T08:33:00.861Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "idntty",
+					"associatedTest": "should be equal to Symbol( 'sample-identity' )"
+				},
+				{
+					"start": "2017-08-29T08:33:00.984Z",
+					"end": "2017-08-29T08:33:00.984Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "idntty",
+					"associatedTest": "should be equal to Symbol( 'sample-identity' )"
+				},
+				{
+					"start": "2017-08-29T08:33:00.985Z",
+					"end": "2017-08-29T08:33:00.985Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "idntty"
+				}
+			]
+		},
+		{
+			"name": "`idntty( { [ Symbol( 'id' ) ]: Symbol( 'sample-identity' ) } )`",
+			"duration": 125,
+			"start": "2017-08-29T08:33:00.860Z",
+			"end": "2017-08-29T08:33:00.985Z",
+			"tests": [
+				{
+					"name": "should be equal to Symbol( 'sample-identity' )",
+					"start": "2017-08-29T08:33:00.860Z",
+					"end": "2017-08-29T08:33:00.984Z",
+					"duration": 124,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

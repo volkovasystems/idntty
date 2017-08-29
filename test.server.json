@@ -1,16 +1,32 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-16T11:15:51.482Z",
-    "end": "2017-08-16T11:15:51.482Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-29T08:32:25.801Z",
+		"end": "2017-08-29T08:32:25.807Z",
+		"duration": 6
+	},
+	"tests": [
+		{
+			"title": "should be equal to Symbol( 'sample-identity' )",
+			"fullTitle": "idntty `idntty( { [ Symbol( 'id' ) ]: Symbol( 'sample-identity' ) } )` should be equal to Symbol( 'sample-identity' )",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to Symbol( 'sample-identity' )",
+			"fullTitle": "idntty `idntty( { [ Symbol( 'id' ) ]: Symbol( 'sample-identity' ) } )` should be equal to Symbol( 'sample-identity' )",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
