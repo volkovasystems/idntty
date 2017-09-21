@@ -45,13 +45,13 @@
 
 	@include:
 		{
-			"assert": "should",
+			"assert": "should/as-function",
 			"idntty": "idntty"
 		}
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const idntty = require( "./idntty.js" );
@@ -72,6 +72,18 @@ describe( "idntty", ( ) => {
 			const ID = Symbol( "id" );
 			const identity = Symbol( "sample-identity" );
 			let source = { [ ID ]: identity };
+
+			assert.equal( idntty( source ), identity );
+
+		} );
+	} );
+
+	describe( "`idntty with function type`", ( ) => {
+		it( "should be equal to Symbol( 'sample-identity' )", ( ) => {
+			const ID = Symbol( "id" );
+			const identity = Symbol( "sample-identity" );
+			let source = function Hello( ){ };
+			source[ ID ] = identity;
 
 			assert.equal( idntty( source ), identity );
 

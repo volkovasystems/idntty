@@ -1,11 +1,11 @@
 {
 	"state": {
-		"passed": 1,
+		"passed": 2,
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-29T08:32:27.321Z",
-	"end": "2017-08-29T08:33:01.166Z",
+	"start": "2017-09-21T07:46:28.939Z",
+	"end": "2017-09-21T07:48:51.350Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,36 +28,52 @@
 		{
 			"name": "idntty",
 			"duration": 0,
-			"start": "2017-08-29T08:33:00.858Z",
+			"start": "2017-09-21T07:48:50.970Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "idntty",
-			"duration": 126,
-			"start": "2017-08-29T08:33:00.859Z",
-			"end": "2017-08-29T08:33:00.985Z",
+			"duration": 194,
+			"start": "2017-09-21T07:48:50.971Z",
+			"end": "2017-09-21T07:48:51.165Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-29T08:33:00.861Z",
-					"end": "2017-08-29T08:33:00.861Z",
+					"start": "2017-09-21T07:48:50.972Z",
+					"end": "2017-09-21T07:48:50.972Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "idntty",
 					"associatedTest": "should be equal to Symbol( 'sample-identity' )"
 				},
 				{
-					"start": "2017-08-29T08:33:00.984Z",
-					"end": "2017-08-29T08:33:00.984Z",
+					"start": "2017-09-21T07:48:51.112Z",
+					"end": "2017-09-21T07:48:51.112Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "idntty",
 					"associatedTest": "should be equal to Symbol( 'sample-identity' )"
 				},
 				{
-					"start": "2017-08-29T08:33:00.985Z",
-					"end": "2017-08-29T08:33:00.985Z",
+					"start": "2017-09-21T07:48:51.113Z",
+					"end": "2017-09-21T07:48:51.113Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "idntty",
+					"associatedTest": "should be equal to Symbol( 'sample-identity' )"
+				},
+				{
+					"start": "2017-09-21T07:48:51.165Z",
+					"end": "2017-09-21T07:48:51.165Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "idntty",
+					"associatedTest": "should be equal to Symbol( 'sample-identity' )"
+				},
+				{
+					"start": "2017-09-21T07:48:51.165Z",
+					"end": "2017-09-21T07:48:51.165Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "idntty"
@@ -66,15 +82,31 @@
 		},
 		{
 			"name": "`idntty( { [ Symbol( 'id' ) ]: Symbol( 'sample-identity' ) } )`",
-			"duration": 125,
-			"start": "2017-08-29T08:33:00.860Z",
-			"end": "2017-08-29T08:33:00.985Z",
+			"duration": 141,
+			"start": "2017-09-21T07:48:50.971Z",
+			"end": "2017-09-21T07:48:51.112Z",
 			"tests": [
 				{
 					"name": "should be equal to Symbol( 'sample-identity' )",
-					"start": "2017-08-29T08:33:00.860Z",
-					"end": "2017-08-29T08:33:00.984Z",
-					"duration": 124,
+					"start": "2017-09-21T07:48:50.972Z",
+					"end": "2017-09-21T07:48:51.112Z",
+					"duration": 140,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`idntty with function type`",
+			"duration": 52,
+			"start": "2017-09-21T07:48:51.113Z",
+			"end": "2017-09-21T07:48:51.165Z",
+			"tests": [
+				{
+					"name": "should be equal to Symbol( 'sample-identity' )",
+					"start": "2017-09-21T07:48:51.113Z",
+					"end": "2017-09-21T07:48:51.165Z",
+					"duration": 52,
 					"state": "pass"
 				}
 			],

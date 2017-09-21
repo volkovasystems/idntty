@@ -1,19 +1,26 @@
 {
 	"stats": {
-		"suites": 2,
-		"tests": 1,
-		"passes": 1,
+		"suites": 3,
+		"tests": 2,
+		"passes": 2,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-29T08:32:25.801Z",
-		"end": "2017-08-29T08:32:25.807Z",
-		"duration": 6
+		"start": "2017-09-21T07:46:27.544Z",
+		"end": "2017-09-21T07:46:27.553Z",
+		"duration": 9
 	},
 	"tests": [
 		{
 			"title": "should be equal to Symbol( 'sample-identity' )",
 			"fullTitle": "idntty `idntty( { [ Symbol( 'id' ) ]: Symbol( 'sample-identity' ) } )` should be equal to Symbol( 'sample-identity' )",
-			"duration": 1,
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to Symbol( 'sample-identity' )",
+			"fullTitle": "idntty `idntty with function type` should be equal to Symbol( 'sample-identity' )",
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -24,7 +31,14 @@
 		{
 			"title": "should be equal to Symbol( 'sample-identity' )",
 			"fullTitle": "idntty `idntty( { [ Symbol( 'id' ) ]: Symbol( 'sample-identity' ) } )` should be equal to Symbol( 'sample-identity' )",
-			"duration": 1,
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to Symbol( 'sample-identity' )",
+			"fullTitle": "idntty `idntty with function type` should be equal to Symbol( 'sample-identity' )",
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}
