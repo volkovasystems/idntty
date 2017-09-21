@@ -45,13 +45,13 @@
 
 	@include:
 		{
-			"assert": "should",
+			"assert": "should/as-function",
 			"idntty": "idntty"
 		}
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const idntty = require( "./idntty.js" );
@@ -82,6 +82,18 @@ describe( "idntty", ( ) => {
 		} );
 	} );
 
+	describe( "`idntty with function type`", ( ) => {
+		it( "should be equal to Symbol( 'sample-identity' )", ( ) => {
+			const ID = Symbol( "id" );
+			const identity = Symbol( "sample-identity" );
+			let source = function Hello( ){ };
+			source[ ID ] = identity;
+
+			assert.equal( idntty( source ), identity );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -97,6 +109,18 @@ describe( "idntty", ( ) => {
 			const ID = Symbol( "id" );
 			const identity = Symbol( "sample-identity" );
 			let source = { [ ID ]: identity };
+
+			assert.equal( idntty( source ), identity );
+
+		} );
+	} );
+
+	describe( "`idntty with function type`", ( ) => {
+		it( "should be equal to Symbol( 'sample-identity' )", ( ) => {
+			const ID = Symbol( "id" );
+			const identity = Symbol( "sample-identity" );
+			let source = function Hello( ){ };
+			source[ ID ] = identity;
 
 			assert.equal( idntty( source ), identity );
 
@@ -120,7 +144,6 @@ describe( "idntty", ( ) => {
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
-
 					const ID = Symbol( "id" );
 					const identity = Symbol( "sample-identity" );
 					let source = { [ ID ]: identity };
@@ -131,6 +154,28 @@ describe( "idntty", ( ) => {
 
 			).value;
 			//: @end-ignore
+			assert.equal( result, "Symbol(sample-identity)" );
+
+		} );
+	} );
+
+	describe( "`idntty with function type`", ( ) => {
+		it( "should be equal to Symbol( 'sample-identity' )", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					const ID = Symbol( "id" );
+					const identity = Symbol( "sample-identity" );
+					let source = function Hello( ){ };
+					source[ ID ] = identity;
+
+					return idntty( source ).toString( );
+				}
+
+			).value;
+			//: @end-ignore
+
 			assert.equal( result, "Symbol(sample-identity)" );
 
 		} );
